@@ -1,17 +1,12 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-class App extends React.Component{
-
-
-
-    render(){
-        return <div>
-            <h1>App Component</h1>
-            <hr />
-            <Header/>
-           <Footer/>
-        </div>
-    }
+import './assets/css/styles.css'
+import Navbar from './Navbar/Navbar'
+const App = () => {
+  return (
+    <div>
+        <Navbar/>
+    </div>
+  )
 }
+
 export default App

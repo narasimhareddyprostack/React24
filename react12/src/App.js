@@ -1,10 +1,12 @@
-import CompA from './PropsEx/CompA'
-function App(){
-
-    return <div>
-        <h1>App Componnet</h1>
-        <hr />
-        <CompA/>
+import React from 'react'
+import Message from './StateEx/Message'
+const App = () => {
+  return (
+    <div>
+        <h3>App Component</h3>
+        <Message/>
     </div>
+  )
 }
+
 export default App

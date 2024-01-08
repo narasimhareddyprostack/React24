@@ -1,10 +1,12 @@
 import React from 'react'
-import Message from './StateEx/Message'
+import Product from './Product/Product'
 const App = () => {
   return (
     <div>
-        <h3>App Component</h3>
-        <Message/>
+        <nav className='navbar navbar-dark bg-dark'>
+          <a href="#"  className='navbar-brand'>Bootstrap - Product</a>
+        </nav>
+        <Product/>
     </div>
   )
 }

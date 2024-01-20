@@ -50,7 +50,7 @@ class User extends React.Component{
                 </table>
                 
                 </> 
-                : <> <h3>No Data</h3> </>
+                : <> <h3>No Data.....</h3> </>
             }
                 </div>
             </div>

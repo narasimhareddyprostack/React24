@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link,BrowserRouter, Routes, Route} from 'react-router-dom'
+import {Link,BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './website/Home'
 import About from './website/About'
 import Services from './website/Services'
@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <BrowserRouter>
+        <Router>
             <nav className='navbar navbar-dark bg-dark navbar-expand-lg'>
         <Link to="/index" className='navbar-brand'>Logo</Link>
         <div className='ml-auto'>
@@ -20,13 +20,13 @@ class App extends Component {
             </ul>
         </div>
             </nav>
-            <Routes>
-                <Route path="/index" element={<Home/>}/>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/services" element={<Services/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-            </Routes> 
-        </BrowserRouter>
+            <Switch>
+            <Route path="/index" component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/services" component={Services}/>
+            <Route path="/contact" component={Contact}/>
+            </Switch> 
+        </Router>
       </div>
     )
   }

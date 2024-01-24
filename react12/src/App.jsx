@@ -5,6 +5,7 @@ import Home from './website/Home'
 import About from './website/About'
 import Services from './website/Services'
 import Login from './FormHandling/Login'
+import Reg from './FormHandling/Reg'
 const App = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const App = () => {
               <Navbar/>
         
         <Switch>
+            <Route path="/reg" component={Reg}/>
             <Route path="/login" component={Login}/>
             <Route path="/index" component={Home}/>
             <Route path="/about" component={About}/>

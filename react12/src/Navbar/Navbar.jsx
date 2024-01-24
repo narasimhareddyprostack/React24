@@ -7,6 +7,7 @@ class Navbar extends React.Component{
         <Link to="/index" className="navbar-brand">Logo</Link>
             <div className='ml-auto'>
                 <ul className='navbar-nav'>
+                    <li><Link to="/message" className="nav-link">useStateEx</Link></li>
                     <li><Link to="/reg" className="nav-link">Registration</Link></li>
                     <li><Link to="/login" className="nav-link">Login</Link></li>
                     <li><Link to="/index" className="nav-link">Home</Link></li>

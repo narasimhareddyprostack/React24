@@ -6,6 +6,7 @@ import About from './website/About'
 import Services from './website/Services'
 import Login from './FormHandling/Login'
 import Reg from './FormHandling/Reg'
+import Message from './Hooks/Message'
 const App = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const App = () => {
               <Navbar/>
         
         <Switch>
+            <Route path="/message" component={Message}/>
             <Route path="/reg" component={Reg}/>
             <Route path="/login" component={Login}/>
             <Route path="/index" component={Home}/>

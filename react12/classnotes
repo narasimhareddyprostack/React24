@@ -1,0 +1,41 @@
+Step 1: 
+
+
+install required redux dependencies/packages
+
+>npm i redux react-redux  @redux-devtools/extension
+>npm i redux 
+       react-redux 
+	   @redux-devtools/extension
+	   
+step 2: To Debug redux store?
+        install crome extension
+		extension name: redux devtools
+		
+Step 3: create react - component / view 
+
+step 4: create redux action
+        What is action?
+		
+		message.action.js
+		
+step 5: create redux reducer?
+		what is reducer? is a pure function?
+		what is pure function?
+		pure function vs impure function?
+		
+step 6: create global store.
+        redux/store.js 
+		
+step 7: Handover store to React Application 
+         - Using Provider Class
+		 App.js 
+		 =================
+		 
+		 <Provider store={store}>
+			<Message/>
+			<User/>
+			<Profile/>
+		 </Provider>
+		 
+step 8: Read store(state) data @ component level/view 
